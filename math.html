@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="app.js"></script>
-
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
     <section class="definition">
         <p>
@@ -51,11 +50,14 @@
     </section>
     <section class="theorem">
         <p>
-            Let \(S\) be a semigroup with finitely many elements. Suppose left and right cancellation laws hold; i.e., if \(ab = ac\) or \(ba = ca\), then \(b=c\).
+            Let \(S\) be a semigroup with a finite number of elements. Suppose left and right cancellation laws hold; i.e., if \(ab = ac\) or \(ba = ca\), then \(b=c\).
             Equivalently, if \(b \neq c \), then \(ab \neq ac\) and \(ba \neq ca\).
             Since there are \(n\) distinct elements \(\in\) \(S\), there must be \(n\) distinct products: \( x_1a, \dots, x_{n}a \in S\), and also: \( ax_1, \dots, ax_{n} \in S\). 
             We must have \( \{ ax_1, \dots, ax_{n}a\} = S = \{ x_1a, \dots, x_{n}a\} \) for every \( a \in S \).
-            Since \(S\) can be left and right factored by every \(a\), there is some element \(e=xe\) for some
+            Suppose for the purpose of contradiction that there is no element \(e \in S\) for which \(e=ae\) for every \(a \in S\);
+            i.e., for all \(e \in S\), there exists some \(a \in S, e \neq ae\).
+            Yet we found that all elements of \(S\) can be written as the product of any element and some other element which contradicts our assumption.
+            Thus there exists an element \(e \in S \) such that \(e=ae\) for all \( a \in S \)
             
             <br>
             <br>
@@ -85,7 +87,8 @@
     </section>
 
     <section class="definition">
-        <p></p>
+        <p>
+            A group \(G\) is abelian if \(ab = ba\) for all \(a,b \in G\). Abelian groups often use additive notation. 
            
     </section>
 

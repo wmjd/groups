@@ -1,32 +1,30 @@
 body {
     margin: 15px;
 }
-
-
-.theorem {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: #EEFFCC;
-    font-size: 150%;
-    border: 1px solid #ac9;
-    border-radius: 3px;
-    line-height: 125%;
-}
-.definition  {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: #ffc;
-    font-size: 150%;
-    border: 1px solid #dddd66;
-    border-radius: 3px;
-    line-height: 125%;
-}
-{
-    font-weight: bolder;
-}
-
 p {
     padding: 3px;
-    word-wrap: break-word;
+    word-wrap: break-word !important;
+ 
 }
 
+section {
+    border-radius: 3px;
+    line-height: 125%;
+    font-size: 150%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.theorem {
+    background-color: #EEFFCC;
+    border: 1px solid #ac9;
+
+}
+.definition  {
+    background-color: #ffc;
+    border: 1px solid #dddd66;
+}
+
+mjx-math{
+    word-wrap: break-word !important;
+    white-space: normal!important;
+}
