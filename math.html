@@ -50,19 +50,17 @@
     </section>
     <section class="theorem">
         <p>
-            Let \(S\) be a semigroup with a finite number of elements. Suppose left and right cancellation laws hold; i.e., if \(ab = ac\) or \(ba = ca\), then \(b=c\).
+            Let \(S\) be a semigroup with a finite number of elements. Suppose the left cancellation laws hold; i.e., if \(ab = ac\) or \(ba = ca\), then \(b=c\).
             Equivalently, if \(b \neq c \), then \(ab \neq ac\) and \(ba \neq ca\).
-            Since there are \(n\) distinct elements \(\in\) \(S\), there must be \(n\) distinct products: \( x_1a, \dots, x_{n}a \in S\), and also: \( ax_1, \dots, ax_{n} \in S\). 
+            Since there are \(n\) distinct elements: \(x_1, ..., x_n \in\) \(S\), there must be \(n\) distinct products: \( x_1a, \dots, x_{n}a \in S\), and also: \( ax_1, \dots, ax_{n} \in S\). 
             We must have \( \{ ax_1, \dots, ax_{n}a\} = S = \{ x_1a, \dots, x_{n}a\} \) for every \( a \in S \).
-            Suppose for the purpose of contradiction that there is no element \(e \in S\) for which \(e=ae\) for every \(a \in S\);
-            i.e., for all \(e \in S\), there exists some \(a \in S, e \neq ae\).
-            Yet we found that all elements of \(S\) can be written as the product of any element and some other element which contradicts our assumption.
-            Thus there exists an element \(e \in S \) such that \(e=ae\) for all \( a \in S \)
+            Every element can be written as the binary product of any element with some element.
+            Thus for any \(a \in S, ae=a\) has a solution for \(e \in S \). Since \(e \in S\), we have \(ee=e\).
+            For any \(a \in S, e = a^{-1}a\) for some \(a^{-1} \in S\).
+            By substitution, associativity, and cancellation, we have \( ea = (ee)a = e(ea) = a\),
+            By the previous theorem, we have identity and inverses from both sides.
+            Hence the group axioms are satisfied. ☯☯
             
-            <br>
-            <br>
-            i.e., \(e=a^{-1}a\), \(e=aa^{-1}\) for some \(a^{-1} \in S\).
-            We have \(ee = aa^{-1}a = aa^{-1}a =ea)
     </section>
     <section class="theorem">
         <p>
