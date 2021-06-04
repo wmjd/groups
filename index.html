@@ -135,6 +135,40 @@
             
         <p>
             V is the so-called four-group of Felix Klein.
+        
+    </section>
+    <section class="theorem">
+        <p>
+            Consider the set \(2^{X}\) of all subsets of a set \(x\) under the operation of symmetric difference.
+            The identity element must be the null set because \((A \cup \emptyset) - (A \cap \emptyset) = A - \emptyset = A\),
+                and elements are self-inverses because \((A \cup A) - (A \cap A) = A - A = \emptyset \).
+            We have associativity:
+            \((A \bigtriangleup B) \bigtriangleup C = \{x \mid x \in A \cup B, x \notin A \cap B \} \bigtriangleup C = \)
+            \(\{x \mid x \in (A \cup B) \cup C, x \notin (A \cap B) \cap C\} = \)
+            \(\{x \mid x \in A \cup (B \cup C), x \notin A \cap (B \cap C)\} = \)
+            \(A \bigtriangleup \{x \mid x \in B \cup C, x \notin B \cap C \} = A \bigtriangleup (B \bigtriangleup C) \).
+            Hence the group axioms are satsfied. ☯
+    </section>
+    <section class="theorem">
+        <p>
+            Let \(S = (-1,1) \) of real numbers be equipped with the operation \(x \cdot y := (x+y/(1+xy))\). The identity element is \(0\) and \(-a\) is the product inverse.
+            Associativity is easy if tedious to verify. The set also is closed under the operation.
+            rHence \(S\) is a group under the indicated operation. ☯
+    </section>
+    <section class="theorem">
+        <p>
+            Let \(S = (0,1)\) of real numbers. We are asked to find a group product such that \(x^{-1} = 1-x \). Let S be equipped with the operation \(a \cdot b := a + b + 0.5 \) mod \(1\).
+            We have \(x \cdot (1-x) = x + 1 - x + 0.5\) mod \(1\) \(= 0.5\).
+            Indeed, for any \(y \in S\) we have \(y \cdot 0.5 = y \).
+            Modular addition is known to be associative.
+            Hence S is a group. ☯
+    </section>
+    <section class="definition">
+        <p>
+            It is customary to extend te product notation for elements in the following ways:
+            \(a^{n}\) denotes the product of \(a\) with itself \(n\) times;
+            \(a^{n}\) denotes \( (a^{-1})^{n}\) and \(a^{0} = e\);
+            if \(A\) and \(B\) are subsets of the group \(G\), then \(AB = \{ x \in G \mid x = ab, a \in A, b \in B \}\)
     </section>
     <section class="theorem">
         <p>
@@ -155,23 +189,6 @@
             Similarly, \(a^{-1}a=e\) maps to \(\phi(a^{-1})\phi(a)=e'\).
             Let \(\phi(a^{-1})=a'^{-1}\), \(\phi(a)=a'\).
             We have \(a'^{-1}a'=e'\) for all \(a' \in G'\). Hence such a mapping preserves identity and inverses. ☯    
-    </section>
-    <section class="theorem">
-        <p>
-            Consider the set \(2^{X}\) of all subsets of a set \(x\) under the operation of symmetric difference.
-            The identity element must be the null set because \((A \cup \emptyset) - (A \cap \emptyset) = A - \emptyset = A\),
-                and elements are self-inverses because \((A \cup A) - (A \cap A) = A - A = \emptyset \).
-            We have associativity:
-            \((A \bigtriangleup B) \bigtriangleup C = \{x \mid x \in A \cup B, x \notin A \cap B \} \bigtriangleup C = \)
-            \(\{x \mid x \in (A \cup B) \cup C, x \notin (A \cap B) \cap C\} = \)
-            \(\{x \mid x \in A \cup (B \cup C), x \notin A \cap (B \cap C)\} = \)
-            \(A \bigtriangleup (\{x \mid x \in B \cup C, x \notin B \cap C \} = A \bigtriangleup (B \bigtriangleup C) \).
-            Hence the group axioms are satsfied. ☯
-    </section>
-    <section class="theorem">
-        Let \(S = (-1,1) \) of real numbers be equipped with the operation \(x \cdot y = (x+y/(1+xy))\). The identity element is \(0\) and \(-a\) is the product inverse.
-        Associativity is easy if tedious to verify. The set also is closed under the operation.
-        Hence \(S\) is a group under the indicated operation. ☯
     </section>
     <section class="definition">
         <p>
