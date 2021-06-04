@@ -154,11 +154,25 @@
             Let \(\phi(e)=e'\), \(\phi(a)=a'\). We have \(e'a'=a'\).
             Similarly, \(a^{-1}a=e\) maps to \(\phi(a^{-1})\phi(a)=e'\).
             Let \(\phi(a^{-1})=a'^{-1}\), \(\phi(a)=a'\).
-            We have \(a'^{-1}a'=e'\) for all \(a' \in G'\). Hence such a mapping preserves identity and inverses.
-
-    
+            We have \(a'^{-1}a'=e'\) for all \(a' \in G'\). Hence such a mapping preserves identity and inverses. ☯    
     </section>
-
+    <section class="theorem">
+        <p>
+            Consider the set \(2^{X}\) of all subsets of a set \(x\) under the operation of symmetric difference.
+            The identity element must be the null set because \((A \cup \emptyset) - (A \cap \emptyset) = A - \emptyset = A\),
+                and elements are self-inverses because \((A \cup A) - (A \cap A) = A - A = \emptyset \).
+            We have associativity:
+            \((A \bigtriangleup B) \bigtriangleup C = \{x \mid x \in A \cup B, x \notin A \cap B \} \bigtriangleup C = \)
+            \(\{x \mid x \in (A \cup B) \cup C, x \notin (A \cap B) \cap C\} = \)
+            \(\{x \mid x \in A \cup (B \cup C), x \notin A \cap (B \cap C)\} = \)
+            \(A \bigtriangleup (\{x \mid x \in B \cup C, x \notin B \cap C \} = A \bigtriangleup (B \bigtriangleup C) \).
+            Hence the group axioms are satsfied. ☯
+    </section>
+    <section class="theorem">
+        Let \(S = (-1,1) \) of real numbers be equipped with the operation \(x \cdot y = (x+y/(1+xy))\). The identity element is \(0\) and \(-a\) is the product inverse.
+        Associativity is easy if tedious to verify. The set also is closed under the operation.
+        Hence \(S\) is a group under the indicated operation. ☯
+    </section>
     <section class="definition">
         <p>
             A group \(G\) is abelian if \(ab = ba\) for all \(a,b \in G\). Abelian groups often use additive notation. 
