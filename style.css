@@ -8,11 +8,13 @@ p {
 }
 
 section {
-    border-radius: 3px;
+    border-radius: 4px;
     line-height: 125%;
     font-size: 150%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .theorem {
     background-color: #EEFFCC;
